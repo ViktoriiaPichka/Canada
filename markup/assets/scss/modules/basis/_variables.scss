@@ -1,0 +1,104 @@
+$brand-primary:							#e21b28;
+$brand-primary-second:              #f1f1f1;
+$brand-primary-third:                    #214c24;
+
+$body-bg:               				#fff;
+$text-color:                             #343434;
+$text-color-light:                       #939393;
+$text-color-darken:                       #000;
+$text-inverse-color:                      #fff;
+
+
+//Typography
+$font-family-base:       				'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-secondary:  				'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-third:       				'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-size-base:         				18px;
+$line-height-base:       				1.285714;
+$line-height-quote:       				1.6662983;
+$font-weight-base:       				400;
+$font-weight-Semi-Bold:   				600;
+$font-weight-Extra-Bold:   				800;
+$headings-color:          				$text-color;
+$headings-color-inverse: 				$text-inverse-color;
+
+
+$font-size-h1:           				floor(($font-size-base * 4.5)); // ~63px
+$font-size-h2:           				36px;
+$font-size-h3:            				20px;
+$font-size-h4:           				ceil(($font-size-base * 1.64286)); // ~23px
+$font-size-h5:          				ceil(($font-size-base * 1.57141)) !default; // ~22px
+$font-size-h6:           				ceil(($font-size-base * 1.42857)); // ~20px
+
+//Nav
+$nav-link-padding-vertical: 10px;
+$nav-link-padding-horizontal: 4px;
+$nav-fz-link: 14px;
+$nav-font-weight: 400;
+$nav-font-family: $font-family-base;
+$nav-link-color: $text-color;
+$nav-link-hover-color: $brand-primary;
+$nav-bg: #fff;
+$nav-color: $brand-primary-second;
+$nav-fz-logo: 30px;
+$nav-btn-bg: $brand-primary;
+$nav-btn-color: #fff;
+$nav-link-footer-color: $text-inverse-color;
+$nav-link-footer-hover-color: #d1d1d1;
+
+//Slider: 
+$arrows-color:             				$brand-primary;
+$arrows-color-dark:						#999999;
+$arrows-bg:             				#fefefe;
+	
+
+
+
+
+// //Buttons
+//Variable
+$btn-padding-vertical: 10px;
+$btn-padding-horizontal: 15px;
+$btn-font-size: 15px;
+$btn-font-weight: 400;
+$btn-font-family: $font-family-base;
+$btn-color: $text-inverse-color;
+$btn-bg: $brand-primary;
+$btn-invers-color: $brand-primary;
+$btn-invers-bg: #fff;
+$btn-invers-border: $brand-primary;
+$btn-lg-padding-vertical: 12px;
+$btn-lg-padding-horizontal: 47px;  
+$btn-lg-font-size: 19px;
+$btn-sm-padding-vertical: 7px;
+$btn-sm-padding-horizontal: 12px;
+$btn-sm-font-size: 10px;
+$btn-border-radius: 6px;
+$btn-border-color: $brand-primary-second;
+$btn-border-color-invers: $brand-primary;
+$btn-border-style: solid;
+$btn-border-width: 2px;
+
+
+
+// //Tumbnail
+$tumb-border:  1px;
+$tumb-border-radius:  50%;
+$tumb-border-color:  $brand-primary;
+$tumb-border-style: dashed;
+$tumb-bg:     #fff;
+$tumb-color-hover: $brand-primary; 
+
+
+
+
+//Forms
+$input-bg:                      	 	#fff;
+$input-color:                    		#c1c1c1;
+$input-color-placeholder:        		#c1c1c1;
+$input-padding:					 		8px 25px 8px 15%;
+$input-fz:						 		16px;
+$input-border-radius:            		10px;
+$input-border-color:                     #939393;
+$input-border:                           1px;
+$label-color:                             #9a9a9a;

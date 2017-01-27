@@ -1,0 +1,276 @@
+.menu-nav {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-top: 6%;
+        @media screen and (max-width: 1024px) {
+            margin-top: 4px;
+        }
+        li {
+            display: inline-block;
+            margin-right: 2%;
+            &:hover,
+            &.active {
+                a {
+                    color: $nav-link-hover-color;
+                }
+            }
+            a {
+                padding: $nav-link-padding-vertical $nav-link-padding-horizontal;
+                display: inline-block;
+                color: $nav-link-color;
+                font: $nav-font-weight $nav-fz-link $nav-font-family;
+                text-transform: uppercase;
+                word-spacing: 0.8px;
+                letter-spacing: 0.2px;
+                @media screen and (max-width: 1024px) {
+                    font-size: 11px;
+                }
+                @media screen and (max-width: 850px) {
+                    font-size: 10px;
+                }
+                &:hover {
+                    text-decoration: none;
+                    color: $nav-link-hover-color;
+                }
+            }
+        }
+        li.hidden {
+            display: none;
+        }
+        @media screen and (max-width: 768px) {
+            display: none;
+            li.hidden {
+                display: block;
+            }
+            text-align: center;
+            li {
+                display: block;
+                a {
+                    display: block;
+                    font-size: 20px;
+                }
+            }
+        }
+        @media screen and (max-width: 480px) {
+            li> a {
+                font-size: 13px;
+                padding: 8px 0px;
+            }
+        }
+    }
+}
+
+.burger-btn {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    width: 58px;
+    height: 44px;
+    background: $nav-btn-bg;
+    box-shadow: none;
+    cursor: pointer;
+    top: 8%;
+    left: 89%;
+    border: none;
+    @media screen and (max-width: 768px) {
+        left: 90%;
+        top: 10px;
+    }
+    @media screen and (max-width: 680px) {
+        left: 87%;
+    }
+    @media screen and (max-width: 520px) {
+        left: 85%;
+        top: 6px;
+    }
+    @media screen and (max-width: 480px) {
+        left: 89%;
+        top: 15px;
+        width: 27px;
+        height: 22px;
+        border-radius: 2px;
+    }
+    @media screen and (max-width: 420px) {
+        top: 9px;
+    }
+    &:focus {
+        outline: none;
+    }
+    span {
+        width: 38px;
+        height: 6px;
+        background: $nav-btn-color;
+        position: absolute;
+        top: 19px;
+        left: 10px;
+        transition: background .3s linear;
+        @media screen and (max-width: 480px) {
+            width: 17px;
+            height: 3px;
+            top: 8.5px;
+            left: 5px;
+        }
+        &:after,
+        &:before {
+            content: '';
+            width: 100%;
+            height: 6px;
+            background: $nav-btn-color;
+            position: absolute;
+            transform: translateY(-10px);
+            left: 0;
+            transition: transform .3s linear;
+            @media screen and (max-width: 480px) {
+                height: 3px;
+                transform: translateY(-5px);
+            }
+        }
+        &:before {
+            transform: translateY(10px);
+            @media screen and (max-width: 480px) {
+                transform: translateY(5px);
+            }
+        }
+    }
+}
+
+.burger-btn.opened span {
+    background: transparent;
+}
+
+.burger-btn.opened span:after {
+    transform: translateY(0px) rotate(45deg);
+}
+
+.burger-btn.opened span:before {
+    transform: translateY(0px) rotate(-45deg);
+}
+
+@media screen and (min-width: 769px) {
+    .burger-btn {
+        display: none;
+    }
+}
+
+.menu-footer {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        @media screen and (max-width: 480px) {
+            justify-content: space-around;
+        }
+        li {
+            margin-right: 2%;
+            display: inline-block;
+            &:hover,
+            &.active {
+                a {
+                    color: $nav-link-footer-hover-color;
+                }
+            }
+            a {
+                padding: 10px 4px;
+                display: inline-block;
+                color: $nav-link-footer-color;
+                font: $nav-font-weight $nav-fz-link $nav-font-family;
+                letter-spacing: -0.1px;
+                text-transform: uppercase;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        @media screen and (max-width: 1115px) {
+            li {
+                margin-right: 1%;
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+        @media screen and (max-width: 850px) {
+            li {
+                a {
+                    font-size: 10px;
+                }
+            }
+        }
+        @media screen and (max-width: 768px) {
+            li {
+                width: 26%;
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+        @media screen and (max-width: 480px) {
+            li {
+                width: 45%;
+                a {
+                    font-size: 13px;
+                    padding: 8px 0px;
+                }
+            }
+        }
+    }
+}
+
+.menu-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    @media screen and (max-width: 768px) {
+        justify-content: space-around;
+    }
+    li {
+        display: inline-block;
+        &:hover,
+        &.active {
+            a {
+                color: $nav-link-footer-color;
+                text-decoration: none;
+            }
+        }
+        a {
+            padding: 5px 6px 6px 4px;
+            display: inline-block;
+            color: #d1d1d1;
+            text-transform: uppercase;
+            border-radius: 10px;
+            background: #1b1b1b;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        a {
+            font-size: 17px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        li {
+            width: 30%;
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+    @media screen and (max-width: 480px) {
+        li {
+            width: 45%;
+        }
+    }
+    .fc {
+        padding: 5px 5px 3px 6px;
+        a {
+            padding: 7px 12px 4px 8px;
+        }
+    }
+    .vk {
+        padding: 6px 5px 11px 5px;
+    }
+}

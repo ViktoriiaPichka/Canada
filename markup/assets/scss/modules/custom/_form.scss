@@ -1,0 +1,75 @@
+.form-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    @media screen and (max-width: 768px) {
+        justify-content: space-around;
+    }
+    .input-group {
+        position: relative;
+        text-align: center;
+        width: 31.6%;
+        margin-bottom: 2.1%;
+        @media screen and (max-width: 768px) {
+            width: 45%;
+        }
+        @media screen and (max-width: 520px) {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 25px;
+            left: 13%;
+            top: 51%;
+            background: $input-border-color;
+            @media screen and (max-width: 680px) {
+                left: 15%;
+            }
+        }
+    }
+    .desc {
+        color: $label-color;
+        font: 14px $font-family-secondary;
+    }
+    .form-control {
+        width: 100%;
+        padding: $input-padding;
+        font-size: $input-fz;
+        color: $input-color;
+        font-family: inherit;
+        font-weight: 300;
+        border: $input-border solid $input-border-color;
+        border-radius: $input-border-radius;
+        margin-top: 1%;
+        margin-left: 1.9%;
+        @media screen and (max-width: 768px) {
+            padding: 5px 25px 5px 39px;
+        }
+        &-name {
+            background: $input-bg url(../images/user.png) no-repeat 3% 50%;
+        }
+        &-mail {
+            background: $input-bg url(../images/mail.png) no-repeat 2% 50%;
+        }
+        &-phone {
+            background: $input-bg url(../images/phone.png) no-repeat 4% 50%;
+        }
+    }
+}
+
+.block-imigrant-right {
+    .form-input {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        .input-group {
+            width: 100%;
+        }
+    }
+}

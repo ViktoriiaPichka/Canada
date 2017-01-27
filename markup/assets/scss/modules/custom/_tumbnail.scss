@@ -1,0 +1,253 @@
+.tumbnail { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-question {
+        width: 15%;
+        margin-right: 4%;
+        @media screen and (max-width: 1024px) {
+            margin-right: 2%;
+        }
+        @media screen and (max-width: 768px) {
+            width: 30%;
+        }
+        @media screen and (max-width: 680px) {
+            width: 50%;
+        }
+        @media screen and (max-width: 480px) {
+            width: 100%;
+        }
+        &-100 {
+            .tumbnail-top.tumbnail-top-border {
+                margin-left: 9%;
+                .img-holder {
+                    padding: 28% 2% 10% 3%;
+                }
+            }
+        }
+        &-libra {
+            .tumbnail-top.tumbnail-top-border {
+                margin-left: 3%;
+                .img-holder {
+                    padding: 24% 2% 14% 4%;
+                }
+            }
+        }
+        &-castle {
+            .tumbnail-top.tumbnail-top-border {
+                margin-left: 1%;
+                .img-holder {
+                    padding: 27% 2% 10% 0%;
+                }
+            }
+        }
+        &-dollar {
+            .tumbnail-top.tumbnail-top-border {
+                margin-left: 2%;
+            }
+            .img-holder {
+                padding: 26% 5% 13% 1%;
+            }
+        }
+        &-medal {
+            .tumbnail-top.tumbnail-top-border {
+                margin-left: 0;
+                .img-holder {
+                    padding: 26% 7% 13% 1%;
+                }
+            }
+        }
+    }
+    &-services {
+        width: 14.5%;
+        margin: 0.5% 0.1% 4% 0.1%;
+        @media screen and (max-width: 980px) {
+            width: 15.5%;
+        }
+        @media screen and (max-width: 840px) {
+            width: 17.5%;
+        }
+        @media screen and (max-width: 768px) {
+            width: 22.5%;
+        }
+        @media screen and (max-width: 640px) {
+            width: 27.5%;
+        }
+        @media screen and (max-width: 520px) {
+            width: 33.5%;
+        }
+        @media screen and (max-width: 480px) {
+            width: 36.5%;
+        }
+        @media screen and (max-width: 420px) {
+            width: 100%;
+        }
+    }
+    &-articles {
+        background: $tumb-bg;
+        border-radius: 10px;
+        width: 107%;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+        @media screen and (max-width: 480px) {
+            width: 93%;
+            margin: 0 auto;
+        }
+        &:hover {
+            .tumbnail-bottom-question p {
+                color: $tumb-color-hover;
+            }
+        }
+        // @media screen and (max-width: 768px) {
+        //            width: 45%;
+        //        }
+        //        @media screen and (max-width: 480px) {
+        //            width: 100%;
+        //        }
+    }
+    &-news {
+        background: $brand-primary-second;
+        border-radius: 10px;
+        width: 100%;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+        @media screen and (max-width: 480px) {
+            width: 65%;
+            margin: 0 auto;
+        }
+    }
+    .tumbnail-top {
+        &-border {
+            width: 44%;
+            .img-holder {
+                display: inline-block;
+            }
+            @media screen and (max-width: 768px) {
+                margin-left: 3% !important;
+                .img-holder {
+                    padding: 24% 2% 14% 4% !important;
+                }
+            }
+        }
+        &-circle {
+            border-radius: $tumb-border-radius;
+            background: $tumb-bg ;
+            box-shadow: 0 45px 5px rgba(27, 27, 27, 0.2);
+                display: flex;
+    align-content: center;
+    align-items: center;   
+        max-height: 70%;
+             @media screen and (max-width: 420px) {
+                    width: 100%;
+                    background: #fff url(../images/logo.png) no-repeat 5% 38%;
+    background-size: 20% 91%;
+                    border-radius: 4%;
+                    text-align: right; 
+            }
+            @media screen and (max-width: 370px) {
+                 background: #fff url(../images/logo.png) no-repeat 5% 38%;
+background-size: 16% 91%;
+                }
+                
+            p {
+                font: 18px $font-family-third;
+                color: #111;
+                padding: 31% 14% 36% 14%;
+                @media screen and (max-width: 980px) {
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 420px) {
+                       font-size: 17px;
+    padding: 8% 6% 8% 25%;
+                }
+ @media screen and (max-width: 370px) {
+                       font-size: 15px;
+    padding: 6% 6% 7% 25%;
+                }
+
+                    
+            }
+        }
+        &-img {
+            .img-holder {
+                padding: 13px 9px;
+                display: inline-block;
+            }
+        }
+        &-news {
+            .img-holder {
+                padding: 12px 11px;
+            }
+        }
+    }
+    .tumbnail-bottom {
+        &-caption {
+            p {
+                font: 18px $font-family-third;
+                color: $text-color-darken;
+                @media screen and (max-width: 980px) {
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 840px) {
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                }
+            }
+        }
+        &-link {
+            a {
+                font: 700 14px $font-family-third;
+                color: #d4d4d4;
+                text-decoration: underline;
+                text-transform: uppercase;
+                &:hover {
+                    color: $text-inverse-color;
+                }
+            }
+        }
+        &-question {
+            p {
+                font: 700 16px "open_sansbold", Helvetica, Arial, sans-serif;
+                color: #1b1b1b;
+                text-transform: uppercase;
+                padding: 0 5% 14% 5%;
+                @media screen and (max-width: 980px) {
+                    font-size: 12px;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 14px;
+                }
+            }
+        }
+        &-news {
+            p {
+                font: 700 16px "open_sansbold", Helvetica, Arial, sans-serif;
+                color: #1b1b1b;
+                text-transform: uppercase;
+                padding: 0% 18% 3% 3%;
+                @media screen and (max-width: 1140px) {
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 980px) {
+                    font-size: 12px;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 9px;
+                }
+                @media screen and (max-width: 620px) {
+                    font-size: 11px;
+                }
+            }
+            .pp {
+                padding: 0% 7% 4% 5%;
+                @media screen and (max-width: 980px) {
+                    padding: 0% 2% 4% 5%;
+                }
+            }
+        }
+    }
+}

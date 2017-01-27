@@ -1,0 +1,45 @@
+@mixin button-variant($color, $background) {
+    color: $color;
+    background: $background;
+    &:hover, &:focus {
+        color: darken($color, 5%);
+        background: darken($background, 10%);
+    }
+    &:active {
+        color: darken($color, 20%);
+        background: darken($background, 15%);
+        &:hover, &:focus {
+            color: darken($color, 10%);
+            background: darken($background, 5%);
+        }
+    }
+    &:disabled {
+        color: darken($color, 15%);
+        background: lighten($background, 20%);
+    }
+    //  .badge {
+    //    color: $background;
+    //    background-color: $color;
+    //  }
+}
+
+//// Button sizes
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $border-radius) {
+    padding: $padding-vertical $padding-horizontal;
+    font-size: $font-size;
+    border-radius: $border-radius;
+}
+
+@mixin button-color($color, $background) {
+    color: $color;
+    background: $background;
+    &:hover {
+        color: darken($color, 5%);
+        background: darken($background, 10%);
+    }
+}
+
+@mixin button-border( $br-width, $br-style, $br-color) {
+    border: $br-width $br-style $br-color;
+}
+

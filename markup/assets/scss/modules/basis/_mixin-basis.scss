@@ -1,0 +1,17 @@
+@mixin size($padding-vertical, $padding-horizontal, $font-size, $border-radius) {
+    padding: $padding-vertical $padding-horizontal;
+    font-size: $font-size;
+    border-radius: $border-radius;
+}
+
+@mixin bg-color($color, $background,$color-hover, $background-hover) {
+    color: $color;
+    background: $background;
+    &:hover {
+        color:$color-hover;
+        background: $background-hover;
+    }
+}
+@mixin border( $br-width, $br-style, $br-color) {
+    border: $br-width $br-style $br-color;
+}
