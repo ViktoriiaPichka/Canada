@@ -10,7 +10,7 @@
 .heading {
     font: 300 $font-size-h2 $font-family-secondary;
     color: $headings-color;
-        line-height: 1.4;
+    line-height: 1.4;
     @media screen and (max-width: 980px) {
         font-size: 30px;
     }
@@ -23,8 +23,7 @@
     @media screen and (max-width: 480px) {
         font-size: 15px;
     }
-    &-h {
-    }
+    &-h {}
 }
 
 .header {
@@ -33,6 +32,11 @@
     background: $nav-bg;
     z-index: 10;
     margin-top: 1.7%;
+    z-index: 40;
+    @media screen and (max-width: 580px) {
+        margin-top: 0.7%;
+        padding-bottom: 2%;
+    }
     &-holder {
         display: flex;
         flex-wrap: wrap;
@@ -82,11 +86,10 @@
                     border-radius: 50%;
                     background: #ececec;
                     border: 10px solid #fff;
-                    padding: 16% 16% 14% 20%;
                     display: inline-block;
-                    margin: 0px 1% 0 5%;
-                    @media screen and (max-width: 420px) {
-                        padding: 11% 16% 12% 20%;
+                    margin: 0px 1% 0 10%;
+                    img {
+                        width: 100%;
                     }
                 }
             }
@@ -123,26 +126,32 @@
         background: #FFF url(../images/Lent.png) no-repeat 42% 71.5%;
         background-size: 76.8% 35.1%;
         padding-bottom: 6.5%;
-        position:relative;
+        position: relative;
         &:after {
-        content: "";
-        position: absolute;
-        width: 15%;
-        height: 100%;
-          left: 48.9%;
-    top: -4%;
-    background: url(../images/arrow_down.png) no-repeat;
-    background-size: 21% 7%;
-        z-index: 20;
-    }
+            content: "";
+            position: absolute;
+            width: 15%;
+            height: 100%;
+            left: 48.9%;
+            top: -4%;
+            background: url(../images/arrow_down.png) no-repeat;
+            background-size: 21% 8%;
+            z-index: 20;
+            @media screen and (max-width: 980px) {
+                background-size: 29% 8%;
+            }
+            @media screen and (max-width: 600px) {
+                display: none;
+            }
+        }
         @media screen and (max-width: 768px) {
             background: #FFF;
             padding-bottom: 3.5%;
         }
         .heading-inner {
             padding-top: 7.2%;
-    padding-bottom: 8.4%;
-    padding-left: 1%;
+            padding-bottom: 8.4%;
+            padding-left: 1%;
             @media screen and (max-width: 768px) {
                 padding-top: 1.5%;
                 padding-bottom: 1.4%;
@@ -150,7 +159,7 @@
             h3 {
                 font: $font-size-h3 $font-family-secondary;
                 color: $text-color-light;
-                    padding: 2.1% 0 1.9% 2%;
+                padding: 2.1% 0 1.9% 2%;
                 @media screen and (max-width: 980px) {
                     font-size: 17px;
                 }
@@ -180,32 +189,37 @@
         background: $brand-primary-second url(../images/Lent2.png) no-repeat 53% 63.5%;
         // background-size: 76.8% 35.1%;
         padding-bottom: 6.5%;
-        position:relative;
+        position: relative;
         &:after {
-        content: "";
-        position: absolute;
-        width: 15%;
-        height: 100%;
-          left: 48.9%;
-    top: -4%;
-    background: url(../images/klever.png) no-repeat;
-    background-size: 21% 7%;
-        z-index: 20;
-    }
+            content: "";
+            position: absolute;
+            width: 15%;
+            height: 100%;
+            left: 47.4%;
+            top: -5.3%;
+            background: url(../images/klever.png) no-repeat;
+            background-size: 42% 11.8%;
+            z-index: 20;
+            @media screen and (max-width: 1220px) {
+                background-size: 37% 9.8%;
+            }
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
         @media screen and (max-width: 768px) {
             background: $brand-primary-second;
             padding-bottom: 3.5%;
         }
-
         .heading-inner {
-                padding-top: 7.1%;
-    padding-bottom: 3.5%;
+            padding-top: 7.1%;
+            padding-bottom: 3.5%;
             @media screen and (max-width: 768px) {
                 padding-top: 1.5%;
                 padding-bottom: 1.4%;
             }
             .heading {
-                    padding-left: 1%;
+                padding-left: 1%;
             }
         }
         &-block {
@@ -218,7 +232,7 @@
             }
         }
         .help-form {
-            padding-top: 6.5%;
+            padding-top: 6.2%;
             .text-center {
                 padding-left: 1%;
             }
@@ -237,14 +251,12 @@
             padding: 0px;
         }
         .heading-inner {
-            padding-top: 7.5%;
+            padding-top: 7.1%;
             padding-bottom: 5.9%;
+            padding-left: 0.9%;
             @media screen and (max-width: 768px) {
                 padding-top: 1.5%;
                 padding-bottom: 1.4%;
-            }
-            .heading {
-                word-spacing: 0;
             }
         }
         .block-imigrant {
@@ -278,8 +290,9 @@
                         font: 20px $font-family-base;
                         color: #a1a1a1;
                         background: url(../images/Lent4.png) no-repeat 0% 100%;
-                        line-height: 1.6;
-                        padding-bottom: 10%;
+                        line-height: 1.5;
+                        padding-bottom: 11%;
+                        padding-top: 3.1%;
                         @media screen and (max-width: 980px) {
                             font-size: 16px;
                         }
@@ -294,8 +307,8 @@
                         font: 700 16px $font-family-third;
                         color: $text-color;
                         text-transform: uppercase;
-                        padding-top: 5%;
-                        line-height: 2;
+                        padding-top: 5.8%;
+                        line-height: 1.9;
                         @media screen and (max-width: 980px) {
                             font-size: 12px;
                         }
@@ -318,16 +331,15 @@
                 .help-form {
                     .form-input {
                         padding: 0 4%;
-                        padding: 0 4%;
-                        padding-top: 6%;
-                        padding-bottom: 8%;
+                        padding-top: 7%;
+                        padding-bottom: 6%;
                         @media screen and (max-width: 680px) {
                             padding-top: 2%;
                             padding-bottom: 0%;
                         }
                         .input-group {
                             width: 96%;
-                            margin-bottom: 2.2%;
+                            margin-bottom: 3.1%;
                             @media screen and (max-width: 680px) {
                                 margin-bottom: 0;
                                 &:after {
@@ -380,7 +392,7 @@
     .not-immigration {
         padding-bottom: 6.8%;
         .heading-inner {
-            padding-top: 7.5%;
+            padding-top: 7.2%;
             padding-bottom: 4%;
             @media screen and (max-width: 768px) {
                 padding-top: 1.5%;
@@ -397,7 +409,7 @@
                 flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: flex-start;
-                    margin-bottom: 2.8%;
+                margin-bottom: 2.8%;
                 .list-img {
                     width: 12%;
                     background: #f1f1f1;
@@ -436,6 +448,14 @@
                     }
                 }
             }
+            .dot {
+                background: url(../images/dot3.png) no-repeat 93% 100%;
+                background-size: 80% 2%;
+                padding-bottom: 1%;
+                @media screen and (max-width: 768px) {
+                    background: transparent;
+                }
+            }
             &-left {
                 display: flex;
                 flex-direction: column;
@@ -455,9 +475,9 @@
             }
         }
         .bottom-heading {
-      padding-top: 2.7%;
-    padding-bottom: 1.2%;
-    padding-left: 3%;
+            padding-top: 3.1%;
+            padding-bottom: 1.2%;
+            padding-left: 3%;
             @media screen and (max-width: 1160px) {
                 padding-left: 0%;
                 text-align: center;
@@ -481,28 +501,39 @@
     }
     .services {
         background: url(../images/bg.png) repeat;
-         position:relative;
+        position: relative;
         &:after {
-        content: "";
-        position: absolute;
-        width: 15%;
-        height: 100%;
-          left: 48.9%;
-    top: -4%;
-    background: url(../images/klever.png) no-repeat;
-    background-size: 21% 7%;
-        z-index: 20;
-    }
+            content: "";
+            position: absolute;
+            width: 15%;
+            height: 100%;
+            left: 47.4%;
+            top: -6.1%;
+            background: url(../images/klever.png) no-repeat;
+            background-size: 42% 11.8%;
+            z-index: 20;
+            @media screen and (max-width: 1220px) {
+                background-size: 37% 9.8%;
+            }
+            @media screen and (max-width: 728px) {
+                background-size: 43% 3.8%;
+                left: 47.4%;
+                top: -2.1%;
+            }
+            @media screen and (max-width: 600px) {
+                display: none;
+            }
+        }
         .heading-inner {
-               padding-top: 7.3%;
-    padding-bottom: 4.7%;
+            padding-top: 7.1%;
+            padding-bottom: 4.7%;
             @media screen and (max-width: 768px) {
                 padding-top: 1.5%;
                 padding-bottom: 1.4%;
             }
             .heading {
                 color: $text-inverse-color;
-                    padding-left: 1%;
+                padding-left: 1%;
             }
         }
         .services-block {
@@ -512,35 +543,50 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0px 24px 0 24px;
-            justify-content: space-around;
-            background: url(../images/Lent3.png) no-repeat 103% 64.5%;
-            padding-bottom: 5.2%;
-            background-size: 98.8% 40.1%;
+            justify-content: center;
+            background: url(../images/Lent3.png) no-repeat 51% 70.5%;
+            padding-bottom: 4.3%;
+            background-size: 92% 45.1%;
             @media screen and (max-width: 840px) {
                 background: transparent;
+            }
+            @media screen and (max-width: 728px) {
+                padding: 0px;
             }
         }
     }
     .swiper-one {
         background: #f1f1f1;
-         position:relative;
+        position: relative;
         &:after {
-        content: "";
-        position: absolute;
-        width: 15%;
-        height: 100%;
-          left: 48.9%;
-    top: -4%;
-    background: url(../images/klever.png) no-repeat;
-    background-size: 21% 7%;
-        z-index: 20;
-    }
+            content: "";
+            position: absolute;
+            width: 15%;
+            height: 100%;
+            left: 47.4%;
+            top: -6.1%;
+            background: url(../images/klever.png) no-repeat;
+            background-size: 42% 12.8%;
+            z-index: 20;
+            @media screen and (max-width: 1220px) {
+                background-size: 37% 9.8%;
+            }
+            @media screen and (max-width: 728px) {
+                background-size: 43% 3.8%;
+                left: 47.4%;
+                top: -2.1%;
+            }
+            @media screen and (max-width: 600px) {
+                display: none;
+            }
+        }
         .container {
             padding: 0 21px;
         }
         .heading-inner {
-            padding-top: 7.5%;
+            padding-top: 7.2%;
             padding-bottom: 5.9%;
+            padding-left: 2%;
             @media screen and (max-width: 768px) {
                 padding-top: 1.5%;
                 padding-bottom: 1.4%;
@@ -578,9 +624,9 @@
             }
         }
         .heading-inner {
-            padding-top: 7.5%;
-            padding-bottom: 6.6%;
-            padding-left: 8%;
+            padding-top: 7.2%;
+            padding-bottom: 5.7%;
+            padding-left: 6%;
             padding-right: 7%;
             @media screen and (max-width: 768px) {
                 padding-top: 1.5%;
@@ -591,7 +637,7 @@
             }
         }
         .link {
-            padding: 2% 0 7.2% 4%;
+            padding: 2% 0 7.2% 3.4%;
             a {
                 display: inline-block;
                 width: 265px;

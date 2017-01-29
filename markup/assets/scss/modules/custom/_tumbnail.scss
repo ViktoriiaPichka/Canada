@@ -1,4 +1,4 @@
-.tumbnail { 
+.tumbnail {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,15 +60,9 @@
     }
     &-services {
         width: 14.5%;
-           margin: 0.5% 0.1% 10% 0.1%;
+        margin: 0.5% 1.9% 10% 0%;
         @media screen and (max-width: 980px) {
-            width: 15.5%;
-        }
-        @media screen and (max-width: 840px) {
-            width: 16.5%;
-        }
-        @media screen and (max-width: 780px) {
-            width: 15.5%;
+            width: 14.5%;
         }
         // @media screen and (max-width: 640px) {
         //     width: 27.5%;
@@ -79,9 +73,15 @@
         // @media screen and (max-width: 480px) {
         //     width: 36.5%;
         // }
-        @media screen and (max-width: 726px) {
+        @media screen and (max-width: 728px) {
             width: 100%;
-              margin: 0.5% 0.1% 7% 0.1%;
+            margin: 0.5% 0.1% 6% 0.1%;
+        }
+        @media screen and (max-width: 600px) {
+            margin: 0.5% 0.1% 10% 0.1%;
+        }
+        @media screen and (max-width: 370px) {
+            margin: 0.5% 0.1% 13% 0.1%;
         }
     }
     &-articles {
@@ -130,57 +130,60 @@
                 .img-holder {
                     padding: 24% 2% 14% 4% !important;
                 }
-            } 
+            }
         }
         &-circle {
             border-radius: $tumb-border-radius;
-            background: $tumb-bg ;
+            background: $tumb-bg;
             box-shadow: 0 45px 5px rgba(27, 27, 27, 0.2);
-                display: flex;
-    align-content: center;
-    align-items: center;   
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
             width: 99%;
-    min-height: 137%;
-             @media screen and (max-width: 728px) {
-                    width: 100%;
-                    background: #fff url(../images/logo.png) no-repeat 5% 38%;
-    background-size: 7% 91%;
-                    border-radius: 4%;
-                        justify-content: flex-end;
-
+            min-height: 137%;
+            @media screen and (max-width: 728px) {
+                width: 100%;
+                background: #fff url(../images/logo.png) no-repeat 5% 38%;
+                background-size: 7% 91%;
+                border-radius: 0%;
+                justify-content: flex-end;
+                text-align: right;
+                box-shadow: none;
+            }
+            @media screen and (max-width: 600px) {
+                background-size: 7% 65%;
             }
             @media screen and (max-width: 370px) {
-                 background: #fff url(../images/logo.png) no-repeat 5% 38%;
-background-size: 16% 91%;
-                }
-                
+                background: #fff url(../images/logo.png) no-repeat 3% 51%;
+                background-size: 10% 56%;
+            }
             p {
                 font: 18px $font-family-third;
                 color: #111;
-                   padding: 0% 6% 1% 10%;
-                   @media screen and (max-width: 1200px) {
+                padding: 0% 6% 1% 10%;
+                @media screen and (max-width: 1200px) {
                     font-size: 15px;
                 }
-                 @media screen and (max-width: 1010px) {
+                @media screen and (max-width: 1010px) {
                     font-size: 13px;
                 }
-                @media screen and (max-width: 780px) {
+                @media screen and (max-width: 890px) {
                     font-size: 11px;
                 }
-                  @media screen and (max-width: 726px) {
-                    font-size: 14px;
+                @media screen and (max-width: 760px) {
+                    font-size: 10px;
                 }
-               
-                @media screen and (max-width: 420px) {
-                       font-size: 17px;
-    padding: 8% 6% 8% 25%;
+                @media screen and (max-width: 728px) {
+                    font-size: 15px;
                 }
- @media screen and (max-width: 370px) {
-                       font-size: 15px;
-    padding: 6% 6% 7% 25%;
+                @media screen and (max-width: 460px) {
+                    font-size: 12px;
                 }
-
-                    
+                @media screen and (max-width: 395px) {
+                    padding: 0% 2% 1% 13%;
+                    font-size: 10px;
+                }
             }
         }
         &-img {
@@ -200,6 +203,7 @@ background-size: 16% 91%;
             p {
                 font: 18px $font-family-third;
                 color: $text-color-darken;
+                line-height: 1.4;
                 @media screen and (max-width: 980px) {
                     font-size: 15px;
                 }
