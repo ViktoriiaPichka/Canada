@@ -570,15 +570,15 @@
         background: #f1f1f1;
         position: relative;
         &:after {
-            content: "";
-            position: absolute;
-            width: 15%;
-            height: 100%;
-            left: 47.4%;
-            top: -6.1%;
-            background: url(../images/klever.png) no-repeat;
-            background-size: 42% 12.8%;
-            z-index: 1;
+       content: "";
+    position: absolute;
+    width: 15%;
+    height: 40%;
+    left: 47.4%;
+    top: -6.1%;
+    background: url(../images/klever.png) no-repeat;
+    background-size: 42% 29.8%;
+    z-index: 1;
             @media screen and (max-width: 1220px) {
                 background-size: 37% 9.8%;
             }
