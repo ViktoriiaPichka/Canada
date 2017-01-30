@@ -61,6 +61,7 @@
     &-services {
         width: 14.5%;
         margin: 0.5% 1.9% 10% 0%;
+        z-index: 5;
         @media screen and (max-width: 980px) {
             width: 14.5%;
         }
@@ -221,6 +222,7 @@
                 color: #d4d4d4;
                 text-decoration: underline;
                 text-transform: uppercase;
+                cursor: pointer;
                 &:hover {
                     color: $text-inverse-color;
                 }
@@ -232,13 +234,19 @@
                 color: #1b1b1b;
                 text-transform: uppercase;
                 padding: 0 5% 14% 5%;
+                cursor: pointer;
                 @media screen and (max-width: 980px) {
                     font-size: 12px;
                 }
                 @media screen and (max-width: 768px) {
                     font-size: 14px;
                 }
+
             }
+             .pp{
+                    padding-bottom: 5%;
+                }
+
         }
         &-news {
             p {

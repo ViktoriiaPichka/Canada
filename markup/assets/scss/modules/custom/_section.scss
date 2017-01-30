@@ -136,7 +136,7 @@
             top: -4%;
             background: url(../images/arrow_down.png) no-repeat;
             background-size: 21% 8%;
-            z-index: 20;
+            z-index: 1;
             @media screen and (max-width: 980px) {
                 background-size: 29% 8%;
             }
@@ -179,10 +179,21 @@
             }
         }
         &-bottom {
+            position:relative;
             background: $brand-primary-second url(../images/Lent.png) no-repeat 42% 71.5%;
             @media screen and (max-width: 768px) {
                 background: $brand-primary-second;
             }
+            &:after {
+            content: "";
+            position: absolute;
+            width: 15%;
+            height: 100%;
+            left: 48.9%;
+            top: -4%;
+            background: transparent;
+            z-index: -5;
+        }
         }
     }
     .question {
@@ -199,7 +210,7 @@
             top: -5.3%;
             background: url(../images/klever.png) no-repeat;
             background-size: 42% 11.8%;
-            z-index: 20;
+            z-index: 1;
             @media screen and (max-width: 1220px) {
                 background-size: 37% 9.8%;
             }
@@ -475,7 +486,7 @@
             }
         }
         .bottom-heading {
-            padding-top: 3.1%;
+            padding-top: 2.1%;
             padding-bottom: 1.2%;
             padding-left: 3%;
             @media screen and (max-width: 1160px) {
@@ -511,7 +522,7 @@
             top: -6.1%;
             background: url(../images/klever.png) no-repeat;
             background-size: 42% 11.8%;
-            z-index: 20;
+            z-index: 1;
             @media screen and (max-width: 1220px) {
                 background-size: 37% 9.8%;
             }
@@ -567,7 +578,7 @@
             top: -6.1%;
             background: url(../images/klever.png) no-repeat;
             background-size: 42% 12.8%;
-            z-index: 20;
+            z-index: 1;
             @media screen and (max-width: 1220px) {
                 background-size: 37% 9.8%;
             }
