@@ -60,7 +60,7 @@
     }
     &-services {
         width: 14.5%;
-        margin: 0.5% 1.9% 10% 0%;
+        margin: 0.5% 1.9% 10vw 0%;
         @media screen and (max-width: 980px) {
             width: 14.5%;
         }
@@ -75,13 +75,13 @@
         // }
         @media screen and (max-width: 728px) {
             width: 100%;
-            margin: 0.5% 0.1% 6% 0.1%;
+            margin: 0.5% 0.1% 6vw 0.1%;
         }
         @media screen and (max-width: 600px) {
-            margin: 0.5% 0.1% 10% 0.1%;
+            margin: 0.5% 0.1% 10vw 0.1%;
         }
         @media screen and (max-width: 370px) {
-            margin: 0.5% 0.1% 13% 0.1%;
+            margin: 0.5% 0.1% 13vw 0.1%;
         }
     }
     &-articles {
