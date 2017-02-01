@@ -3,7 +3,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: flex-end;
         margin-top: 6%;
         @media screen and (max-width: 1024px) {
             margin-top: 4px;
@@ -25,11 +25,14 @@
                 text-transform: uppercase;
                 word-spacing: 0.8px;
                 letter-spacing: 0.2px;
-                @media screen and (max-width: 1024px) {
+                 @media screen and (max-width: 1130px) {
                     font-size: 11px;
                 }
-                @media screen and (max-width: 850px) {
+                @media screen and (max-width: 1024px) {
                     font-size: 10px;
+                }
+                @media screen and (max-width: 850px) {
+                    font-size: 9px;
                 }
                 &:hover {
                     text-decoration: none;
@@ -95,6 +98,9 @@
     }
     @media screen and (max-width: 420px) {
         top: 9px;
+    }
+      @media screen and (max-width: 340px) {
+        top: 5px;
     }
     &:focus {
         outline: none;
@@ -271,6 +277,6 @@
         }
     }
     .vk {
-        padding: 6px 5px 11px 5px;
+        padding: 5px 5px 11px 5px;
     }
 }

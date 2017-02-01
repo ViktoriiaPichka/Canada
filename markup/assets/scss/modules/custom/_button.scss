@@ -28,8 +28,9 @@
         @include button-variant($btn-color, $btn-bg);
     }
     &-lg {
-        @include button-size($btn-lg-padding-vertical, $btn-lg-padding-horizontal, $btn-lg-font-size, $btn-border-radius);
+        @include button-size($btn-lg-padding-vertical, $btn-lg-padding-horizontal, $btn-lg-font-size, 11px);
         font-family: $font-family-third;
+        font-weight: 600;
         @media screen and (max-width: 1200px) {
             font-size: 16px;
         }

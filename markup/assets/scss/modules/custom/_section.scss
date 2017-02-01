@@ -67,10 +67,11 @@
             margin-bottom: -2.8%;
             @media screen and (max-width: 1024px) {
                 width: 13.9%;
-                margin-bottom: -5.6%;
+                margin-bottom: -45px;
             }
             @media screen and (max-width: 768px) {
                 width: 20%;
+                margin-bottom: -25px;
             }
             .logo {
                 display: block;
@@ -118,6 +119,7 @@
 }
 
 .main {
+    display: block;
     padding-top: 3%;
     @media screen and (max-width: 768px) {
         padding-top: 9%;
@@ -131,17 +133,24 @@
             content: "";
             position: absolute;
             width: 15%;
-            height: 100%;
+            height: 500px;
             left: 48.9%;
             top: -4%;
             background: url(../images/arrow_down.png) no-repeat;
             background-size: 21% 8%;
             z-index: 20;
-            @media screen and (max-width: 980px) {
-                background-size: 29% 8%;
+            @media screen and (max-width: 1100px) {
+                 width: 19%;
+                 height: 300px;
+                   background-size: 29% 18%;
             }
-            @media screen and (max-width: 600px) {
-                display: none;
+            @media screen and (max-width: 980px) {
+                background-size: 29% 13%;
+                 width: 15%;
+                   
+            }
+             @media screen and (max-width: 786px) {
+               display: none;
             }
         }
         @media screen and (max-width: 768px) {
@@ -179,7 +188,35 @@
             }
         }
         &-bottom {
+               &:after {
+            content: "";
+            position: absolute;
+            width: 15%;
+            height: 300px;
+            left: 47.4%;
+            top: -5.3%;
+            background: url(../images/klever.png) no-repeat ;
+            background-size: 42% 25.8%;
+            z-index: 20;
+            @media screen and (max-width: 1220px) {
+                background-size: 37% 23.8%;
+                height: 300px;
+            }
+             @media screen and (max-width: 1100px) {
+                 background-size: 37% 20.8%;
+            }
+             @media screen and (max-width: 980px) {
+                 background-size: 37% 18.8%;
+            }
+            @media screen and (max-width: 800px) {
+                 background-size: 37% 15.8%;
+            }
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
             background: $brand-primary-second url(../images/Lent.png) no-repeat 42% 71.5%;
+              background-size: 76.8% 35.1%;
             @media screen and (max-width: 768px) {
                 background: $brand-primary-second;
             }
@@ -194,14 +231,24 @@
             content: "";
             position: absolute;
             width: 15%;
-            height: 100%;
+            height: 300px;
             left: 47.4%;
             top: -5.3%;
             background: url(../images/klever.png) no-repeat;
-            background-size: 42% 11.8%;
+            background-size: 42% 25.8%;
             z-index: 20;
             @media screen and (max-width: 1220px) {
-                background-size: 37% 9.8%;
+                background-size: 37% 23.8%;
+
+            }
+             @media screen and (max-width: 1100px) {
+                 background-size: 37% 20.8%;
+            }
+             @media screen and (max-width: 980px) {
+                 background-size: 37% 18.8%;
+            }
+            @media screen and (max-width: 800px) {
+                 background-size: 37% 15.8%;
             }
             @media screen and (max-width: 768px) {
                 display: none;
@@ -244,7 +291,7 @@
         overflow: hidden;
     }
     .immigration {
-        padding-bottom: 7.5%;
+        padding-bottom: 7.5vw;
         .container {
             max-width: 1175px;
             margin: 0 auto;
@@ -283,7 +330,6 @@
                     display: flex;
                     flex-wrap: wrap;
                     align-items: center;
-                    flex-direction: column;
                     width: 43%;
                     padding: 0 3.5%;
                     .text-top {
@@ -339,7 +385,7 @@
                         }
                         .input-group {
                             width: 96%;
-                            margin-bottom: 3.1%;
+                            margin-bottom: 3.1vh;
                             @media screen and (max-width: 680px) {
                                 margin-bottom: 0;
                                 &:after {
@@ -446,11 +492,14 @@
                             font-size: 16px;
                         }
                     }
+                    .pp{
+                        padding-bottom: 3%;
+                    }
                 }
             }
             .dot {
                 background: url(../images/dot3.png) no-repeat 93% 100%;
-                background-size: 80% 2%;
+                background-size: 80% ;
                 padding-bottom: 1%;
                 @media screen and (max-width: 768px) {
                     background: transparent;
@@ -506,21 +555,26 @@
             content: "";
             position: absolute;
             width: 15%;
-            height: 100%;
+            height: 300px;
             left: 47.4%;
-            top: -6.1%;
+            top: -5.3%;
             background: url(../images/klever.png) no-repeat;
-            background-size: 42% 11.8%;
+            background-size: 42% 25.8%;
             z-index: 20;
             @media screen and (max-width: 1220px) {
-                background-size: 37% 9.8%;
+                background-size: 37% 23.8%;
+                height: 300px;
             }
-            @media screen and (max-width: 728px) {
-                background-size: 43% 3.8%;
-                left: 47.4%;
-                top: -2.1%;
+             @media screen and (max-width: 1100px) {
+                 background-size: 37% 20.8%;
             }
-            @media screen and (max-width: 600px) {
+             @media screen and (max-width: 980px) {
+                 background-size: 37% 18.8%;
+            }
+            @media screen and (max-width: 800px) {
+                 background-size: 37% 15.8%;
+            }
+            @media screen and (max-width: 768px) {
                 display: none;
             }
         }
@@ -562,21 +616,26 @@
             content: "";
             position: absolute;
             width: 15%;
-            height: 100%;
+            height: 300px;
             left: 47.4%;
-            top: -6.1%;
+            top: -5.3%;
             background: url(../images/klever.png) no-repeat;
-            background-size: 42% 12.8%;
+            background-size: 42% 25.8%;
             z-index: 20;
             @media screen and (max-width: 1220px) {
-                background-size: 37% 9.8%;
+                background-size: 37% 23.8%;
+                height: 300px;
             }
-            @media screen and (max-width: 728px) {
-                background-size: 43% 3.8%;
-                left: 47.4%;
-                top: -2.1%;
+             @media screen and (max-width: 1100px) {
+                 background-size: 37% 20.8%;
             }
-            @media screen and (max-width: 600px) {
+             @media screen and (max-width: 980px) {
+                 background-size: 37% 18.8%;
+            }
+            @media screen and (max-width: 800px) {
+                 background-size: 37% 15.8%;
+            }
+            @media screen and (max-width: 768px) {
                 display: none;
             }
         }
@@ -601,11 +660,12 @@
                 display: inline-block;
                 width: 265px;
                 background: url(../images/search.png) no-repeat 0% 0%;
-                background-size: 8% 100%;
+                background-size: 7% 100%;
                 color: $brand-primary;
                 text-decoration: underline;
                 text-transform: uppercase;
                 font: 700 14px $font-family-third;
+                cursor: pointer;
                 &:hover {
                     color: #1b1b1b;
                 }
@@ -642,11 +702,12 @@
                 display: inline-block;
                 width: 265px;
                 background: url(../images/search.png) no-repeat 3% 0%;
-                background-size: 8% 100%;
+                background-size: 7% 100%;
                 color: $brand-primary;
                 text-decoration: underline;
                 text-transform: uppercase;
                 font: 700 14px $font-family-third;
+                cursor: pointer;
                 &:hover {
                     color: #1b1b1b;
                 }
